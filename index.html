@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Menu encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Rafael</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio"     onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi"    onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills"     onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRÍCULUM</a></li>
+                    <li><a href="#portfolio"  onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto"   onclick="seleccionar()">CONTACTO</a></li>
+                    <button class="switch" id="switch">
+                        <span><i class="fa-solid fa-sun"></i></span>
+                        <span><i class="fa-solid fa-moon"></i></span>
+                    </button>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCIÓN INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class = "contenedor-img">
+                <img src="/img/rafa.jpg" alt="">
+            </div>
+            <h1>RAFAEL VAZQUEZ</h1>
+            <h2>Semi Ingeniero en Sistemas Computacionales - Principiante en Desarrollo Web </h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/rvazquezbandaa/" ><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/rafaelvazban/"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Rafael Vazquez</span> Aunque aún no he completado mi carrera, soy un apasionado del desarrollo web y un autodidacta entusiasta. Mis habilidades principales incluyen JavaScript, HTML, CSS y GitHub. Me encanta explorar nuevas tecnologías y aplicarlas para crear experiencias web dinámicas y atractivas. Estoy comprometido con el aprendizaje continuo y estoy emocionado de contribuir al mundo del desarrollo web con mis habilidades y creatividad.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            312-121-75-62
+                        </li>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            28/02/1996
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            vazban96@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.vazban.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Av. San Fernando, Lomas de Circunvalación, 28010 Colima, Col.
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCER</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span>GUITARRA</span> 
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>CAMINAR</span> 
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span> 
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button id="descargar">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Habilidades Técnicas -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>69%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> CSS </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> GitHub</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades Profesionales -->
+                <div class="col">
+                    <h3>Habilidades Profesionales </h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CURRÍCULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Carrera</h4>
+                        <span class="casa">Universidad ICEP</span>
+                        <span class="fecha">2021-2024</span>
+                        <p>Estudiante de Ingeniería en Sistemas Computacionales en la Universidad ICEP, enfocado en el área de programación. Dedicado a la mejora continua de habilidades, invierto los domingos en estudios para finalizar mi carrera profesional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso-Udemy</h4>
+                        <span class="casa">JavaScript Moderno: Guía para dominar el lenguaje</span>
+                        <span class="fecha">Agosto 2023-Enero 2024</span>
+                        <p>Completé con éxito un curso de programación con JavaScript, enfocado en el desarrollo web moderno y la creación de aplicaciones interactivas. A través del curso, adquirí una comprensión profunda de los fundamentos de JavaScript, incluyendo variables, tipos de datos, estructuras de control y funciones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso-Udemy</h4>
+                        <span class="casa">Aprende MySQL sin dolor</span>
+                        <span class="fecha"> Mayo 2023-Agosto 2023</span>
+                        <p>Completé con éxito un curso de MySQL enfocado en la administración y desarrollo de bases de datos. A lo largo del curso, adquirí una comprensión profunda de los principios fundamentales de las bases de datos relacionales y cómo utilizar MySQL para diseñar, crear y administrar bases de datos eficientes y seguras.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Soporte Técnico </h4>
+                        <span class="casa">Universidad ICEP</span>
+                        <span class="fecha">ENERO-2024</span>
+                        <p>Desempeño el rol de Técnico de Soporte y Mantenimiento de Computadoras en la Universidad ICEP. En este puesto, colaboro estrechamente con el encargado del departamento de tecnología para garantizar el funcionamiento óptimo de los equipos informáticos y brindar soporte técnico a estudiantes y personal académico.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer </h4>
+                        <span class="casa">Universidad de Colima</span>
+                        <span class="fecha">JUNIO 2023-DICIEMBRE 2023</span>
+                        <p>Durante mi pasantía como desarrollador Front-end en la Universidad de Colima, tuve la oportunidad de trabajar en proyectos web innovadores y colaborativos que mejoran la experiencia de usuarios y estudiantes.Mis responsabilidades incluyeron la creación de interfaces de usuario atractivas y funcionales utilizando tecnologías como HTML, CSS y JavaScript. Trabajé en estrecha colaboración con diseñadores y equipos de desarrollo para traducir diseños y conceptos en código, asegurando la consistencia y usabilidad en todos los dispositivos y navegadores.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/proyecto.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyecto.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyecto.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div><div class="proyecto">
+                    <img src="img/proyecto.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION CONTACTO-->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input id="nombre"  type="text" placeholder="Tú Nombre">
+                    <input id="telefono" type="text" placeholder="Número Telefónico">
+                    <input id="correo" type="text" placeholder="Dirección de Correo">
+                    <input id="tema" type="text" placeholder="Tema">
+                    <textarea id="mensaje" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button onclick="validarFormulario()">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15067.178159086558!2d-103.7163693!3d19.2477841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255aa568288a15%3A0x3b8b1888e74cc9ee!2sUniversidad%20ICEP!5e0!3m2!1ses-419!2smx!4v1706571891336!5m2!1ses-419!2smx" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Av. San Fernando #369, Colonia Lomas de Circunvalación
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 312-121-75-62
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                               Email:vazban@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/rvazquezbandaa/" ><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/rafaelvazban/"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
